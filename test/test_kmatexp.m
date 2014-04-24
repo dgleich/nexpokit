@@ -45,6 +45,6 @@ Z = expm(alpha*P);
 
 for j=1:size(P,1)
     y = kmatexp(alpha*P,j,20); % this should be fully accuracy
-    assert(norm(y-Z(:,j)) < 10*eps(1), ...
+    assert(norm(y-Z(:,j)) < sqrt(size(A,1))*eps(1), ...
         sprintf('failed on column %i of netscience (alpha=%f)', j,alpha))
 end

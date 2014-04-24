@@ -1,4 +1,3 @@
-addpath('~/dev/graph_models/');
 %%
 A = graph_model('forest-fire',1000,'prob',0.49,'initial',10);
 nnz(A)

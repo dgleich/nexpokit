@@ -1,8 +1,9 @@
 
 CXXFLAGS += -std=c++0x -O3 -Wall
+LDFLAGS += -static-libgcc -static-libstdc++
 CC := $(CXX)
 
-CXX=g++-4.4
+CXX?=g++
 
 all :  forest_fire_model
 

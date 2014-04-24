@@ -3,14 +3,20 @@
 load temp_results
 results = results(:,1:30);
 %%
+gdata = gdata';
+%%
 maxd = full([gdata.maxdeg]);
 ns = [gdata.n];
 nnzs = [gdata.nnz];
-semilogx(maxd,mean(results'))
+means = mean(results,3)';
+
+semilogx(maxd,means(1:numel(maxd)),'.')
 %%
-semilogx(maxd.^2,mean(results'))
+loglog(maxd.^2,means(1:numel(maxd)),'.')
 %%
-semilogx(ns,mean(results')./(maxd.^2.*log(maxd.^2)))
+loglog(ns,means(1:numel(maxd)),'.')
+%%
+semilogx(ns,means(1:numel(maxd))./(maxd.^2.*log(maxd.^2)))
 %%
 semilogx(ns,mean(results'))
 %%

@@ -3,7 +3,7 @@
 experimentname = 'runtime';
 experiment_directory = '../results/';
 
-
+addpath('../plotting_utils'); % so "set_figure_size.m" is available
 %addpath('~/nexpokit/plotting');
 load(strcat(experiment_directory, experimentname, '_to_plot') );
 
@@ -19,7 +19,7 @@ clf;
 hold all;
 hs = [];
 %alglist = { 'expmv', 'half', 'gsqres', 'gexpmq', 'gexpm', 'expmimv'};
-colors = 'bcgrmk';
+colors = 'kmbrg';
 for id=1:num_algs
 	% guarantee we plot from smallest to largest by input size
 	subset = inputsize(newindexing);

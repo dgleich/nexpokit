@@ -14,7 +14,9 @@ _These are research codes and may not work for you._
 Download
 --------
 
-* [nexpokit.tar.gz](nexpokit.tar.gz) (2013-08-05)
+* [nexpokit.tar.gz](https://github.com/dgleich/nexpokit/archive/IM-submission-v1.zip) -- github link -- (2014-05-04)
+* [nexpokit.tar.gz](nexpokit.tar.gz) (2014-05-04)
+* [nexpokit-waw.tar.gz](nexpokit-waw.tar.gz) (2013-08-05)
 
 Synopsis
 --------
